@@ -11,4 +11,6 @@ package notacion.exponencial;
  */
 public class TablaEstados {
     
+    int variable;
+    
 }
