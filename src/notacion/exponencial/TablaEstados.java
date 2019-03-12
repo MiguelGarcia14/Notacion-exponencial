@@ -10,7 +10,14 @@ package notacion.exponencial;
  * @author campu
  */
 public class TablaEstados {
-    
-    int variable;
+    private static char[][] TABLA_TRANSICION={
+                {'2','E','1','1','E','E'},  //Q0
+                {'2','E','E','E','E','E'},  //Q1
+                {'2','3','E','E','E','A'},  //Q2
+                {'4','E','E','E','E','E'},//Q3
+                {'4','E','E','E','5','A'},//Q4
+                {'7','E','6','6','E','E'},//Q5
+                {'7','E','E','E','E','E'},//Q6
+                {'7','E','E','E','E','A'}};//Q7
     
 }
