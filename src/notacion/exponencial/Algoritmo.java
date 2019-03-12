@@ -10,5 +10,8 @@ package notacion.exponencial;
  * @author campu
  */
 public class Algoritmo {
-    
+    public void algoritmo()
+    {
+        
+    }
 }
