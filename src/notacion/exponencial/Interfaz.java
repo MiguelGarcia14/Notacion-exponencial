@@ -75,7 +75,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 680, 270));
 
-        fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/automatas/fondo.png"))); // NOI18N
+        fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/notacion/exponencial/fondo.png"))); // NOI18N
         getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 695, 536));
 
         pack();
