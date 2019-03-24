@@ -5,12 +5,10 @@ package controlador;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.beans.property.ReadOnlyBooleanProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
-import javafx.scene.canvas.Canvas;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -222,54 +220,5 @@ public class VistaPrincipalController implements Initializable {
         }
 
         txtCadena.setText(aux);
-    }
-
-    @FXML
-    private void teclaPulsada(KeyEvent event) {
-        KeyCode tecla = event.getCode();
- 
-        switch (tecla) {
-            case NUMPAD0:
-            case DIGIT0:
-            case NUMPAD1:
-            case DIGIT1:
-            case NUMPAD2:
-            case DIGIT2:
-            case NUMPAD3:
-            case DIGIT3:
-            case NUMPAD4:
-            case DIGIT4:
-            case NUMPAD5:
-            case DIGIT5:
-            case NUMPAD6:
-            case DIGIT6:
-            case NUMPAD7:
-            case DIGIT7:
-            case NUMPAD8:
-            case DIGIT8:
-            case NUMPAD9:
-            case DIGIT9:
-            case E:
-            case ADD:
-            case PERIOD:
-            case SUBTRACT:
-                break;
-            case BACK_SPACE:
-                String aux = txtCadena.getText();
-                int tamaño = aux.length() - 1;
-                if (tamaño < 0) {
-                    txtCadena.setText("");
-                }
-                else
-                {
-                    aux = aux.substring(0, tamaño);
-                }   txtCadena.setText(aux);
-                break;
-            default:
-                JOptionPane.showMessageDialog(null, "Caracter invalido: " + event.getText(),
-                        "Error", JOptionPane.ERROR_MESSAGE);
-                event.consume();
-                break;
-        }
     }
 }
