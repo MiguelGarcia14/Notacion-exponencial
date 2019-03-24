@@ -58,7 +58,7 @@
                   <Button fx:id="btnBorrar" mnemonicParsing="false" onAction="#btnSup" prefHeight="35.0" prefWidth="75.0" text="Supr" GridPane.columnIndex="3" GridPane.rowIndex="3" />
                </children>
             </GridPane>
-            <TextField id="txtCadena" fx:id="txtCadena" layoutX="42.0" layoutY="60.0" nodeOrientation="LEFT_TO_RIGHT" onKeyReleased="#teclaPulsada" prefHeight="59.0" prefWidth="234.0">
+            <TextField id="txtCadena" fx:id="txtCadena" layoutX="42.0" layoutY="60.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="59.0" prefWidth="234.0">
                <font>
                   <Font name="Book Antiqua" size="20.0" />
                </font>
