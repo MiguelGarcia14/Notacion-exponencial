@@ -24,6 +24,13 @@ public class PruebaEscritorio
         entrada = new SimpleStringProperty();
     }
     
+    public PruebaEscritorio(String estado, String simbolo)
+    {
+        this.estado = new SimpleStringProperty(estado);
+        this.simbolo = new SimpleStringProperty(simbolo);
+        entrada = new SimpleStringProperty();
+    }
+    
     public PruebaEscritorio(String estado, String simbolo, String entrada)
     {
         this.estado = new SimpleStringProperty(estado);
