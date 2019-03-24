@@ -1,0 +1,52 @@
+/* ESTABLECEMOS UNA IMAGEN DE FONDO */
+#contenedor{
+    -fx-background-image: url("/imagenes/fondo.jpg");
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+    -fx-background-size: 100% 100%;
+}
+
+/*
+Cambiando las propiedades al textfield txtCadena
+*/
+#txtCadena{
+    -fx-border-color: transparent transparent -fx-prompt-text-fill transparent, transparent;
+    -fx-border-width: 0px, 0px, 1px, 0px, 0px, 0px, 1px, 0px;
+    -fx-border-insets: 0px, 0px, -1px, 0px, 0px, 0px, -1px, 0px;
+    -fx-background-color: yellow;
+    -fx-background-insets: 0px;
+    -fx-background-radius: 0px;
+    -fx-padding: 1.28mm;
+    -fx-opacity: 0.65;
+    -fx-text-fill: blue;
+    -fx-font-weight: bold;
+    -fx-display-caret:false;
+    -fx-font: 24px "Book Antiqua";
+}
+
+/*  BOTONES */
+.button{
+    -fx-alignment: center;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 12.0pt;
+    -fx-font-style: NORMAL;
+    -fx-min-height: 5.76mm;
+    -fx-min-width: 14.08mm;
+    -fx-padding: 1.92mm;
+    -fx-background-color: #219fff; /* #219fff*/
+    -fx-background-radius: 0px;
+    -fx-text-fill: whitesmoke;
+    -fx-opacity: 0.80;
+}
+
+/* CUANDO EL RATON ESTA SOBRE EL BOTON */
+.button:hover{
+    -fx-background-color: gray;  /*#9900ff*/
+}
+
+/* CUANDO EL BOTON ES PRESIONADO */
+.button:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+    -fx-background-color: black;
+}
