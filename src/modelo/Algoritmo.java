@@ -129,10 +129,12 @@ public class Algoritmo extends Thread {
 
                     // si no es ninguno de los simbolos anteriores, es un error
                     default:
-                        error(objeto.getSimbolo());
                         objeto.setEstado("E");
                         objeto.setSimbolo(objeto.getSimbolo());
-                        aceptacionCadena();
+                        datos.add(new PruebaEscritorio(objeto.getEstado(), objeto.getSimbolo()));
+                        ctrl.tblPruebaEscritorio.setItems(datos);    // agregamos una nueva fila
+                                                                     // con el carácter invalido que ingreso
+                        error(objeto.getSimbolo());
                         this.stop();
                 }
                 Thread.sleep(1000);    // hacemoa que el hilo se duerma por 1 segundo
@@ -163,7 +165,10 @@ public class Algoritmo extends Thread {
      */
     public void error(String s)
     {
-        JOptionPane.showMessageDialog(null, "No se puede analizar el caracter que ingreso: " + s, "Error en la lectura", 
+        JOptionPane.showMessageDialog(null, 
+                "Usted ingreso un carácter invalido para analizar\n" +
+                "Carácter que ingreso: " + s, 
+                "Error en la lectura", 
                 JOptionPane.ERROR_MESSAGE);
     }
 }
